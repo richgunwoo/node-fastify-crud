@@ -1,0 +1,29 @@
+### index
+GET http://localhost:5000
+
+### get all user
+GET http://localhost:5000/users
+
+### get single users
+GET http://localhost:5000/users/:id
+
+### create user
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "new user",
+    "email": "new user@example.com"
+}
+
+### update user
+PUT http://localhost:5000/users/:id
+Content-Type: application/json
+
+{
+    "name": "new user update",
+    "email": "new user update@example.com"
+}
+
+### delete users
+DELETE http://localhost:5000/users/:id
